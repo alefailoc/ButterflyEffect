@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="474.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.butterflyeffect.ConfigurationController">
+    <children>
+        <Button layoutX="42.0" layoutY="434.0" onAction="#onHelloButtonClick" text="View planners" />
+        <TabPane layoutX="9.0" layoutY="12.0" prefHeight="403.0" prefWidth="768.0" side="LEFT" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Insert Tasks">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="178.0" layoutY="34.0" prefHeight="17.0" prefWidth="33.0" text="Task">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="169.0" layoutY="75.0" prefHeight="18.0" prefWidth="43.0" text="Priority">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="142.0" layoutY="121.0" prefHeight="18.0" prefWidth="74.0" text="Time Taken">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="156.0" layoutY="168.0" prefHeight="18.0" prefWidth="59.0" text="Due Date">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="171.0" layoutY="213.0" prefHeight="18.0" prefWidth="51.0" text="Details">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="161.0" layoutY="310.0" prefHeight="18.0" prefWidth="59.0" text="Is it ...">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <RadioButton layoutX="254.0" layoutY="310.0" mnemonicParsing="false" onAction="#difficultBtn" text="difficult" />
+                                <Label layoutX="369.0" layoutY="310.0" prefHeight="18.0" prefWidth="21.0" text="or">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <RadioButton layoutX="444.0" layoutY="310.0" mnemonicParsing="false" onAction="#easyBtn" text="easy" />
+                                <Button layoutX="574.0" layoutY="310.0" mnemonicParsing="false" onAction="#addBtn" text="add" />
+                                <TextField fx:id="tNameTxt" layoutX="228.0" layoutY="30.0" prefHeight="26.0" prefWidth="203.0" />
+                                <TextField fx:id="tPriorityTxt" layoutX="228.0" layoutY="71.0" prefHeight="26.0" prefWidth="203.0" />
+                                <TextField fx:id="tTimeTakenTxt" layoutX="228.0" layoutY="117.0" prefHeight="26.0" prefWidth="203.0" />
+                                <TextField fx:id="tDetailsTxt" layoutX="228.0" layoutY="217.0" prefHeight="59.0" prefWidth="206.0" />
+                        <TextField fx:id="tDueDateTxt" layoutX="228.0" layoutY="164.0" prefHeight="26.0" prefWidth="203.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Edit Tasks">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="177.0" layoutY="34.0" text="Task">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="171.0" layoutY="75.0" text="Priority">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="163.0" layoutY="167.0" text="Due Date">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="171.0" layoutY="213.0" text="Details">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="144.0" layoutY="121.0" text="Time Taken">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="173.0" layoutY="311.0" text="Is it  ...">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <RadioButton layoutX="252.0" layoutY="311.0" mnemonicParsing="false" onAction="#difficultBtn" text="difficult" />
+                                <RadioButton layoutX="442.0" layoutY="311.0" mnemonicParsing="false" onAction="#easyBtn" text="easy" />
+                                <Label layoutX="362.0" layoutY="311.0" text="or">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                                <RadioButton layoutX="527.0" layoutY="154.0" mnemonicParsing="false" onAction="#completedBtn" text="Completed!!" />
+                                <Button layoutX="434.0" layoutY="30.0" mnemonicParsing="false" onAction="#searchBtn" text="search" />
+                                <Button layoutX="561.0" layoutY="307.0" mnemonicParsing="false" onAction="#editTaskBtn" text="save changes" />
+                                <TextField fx:id="tDetailTxt" layoutX="228.0" layoutY="217.0" prefHeight="59.0" prefWidth="206.0" />
+                                <TextField fx:id="tTimeTxt" layoutX="228.0" layoutY="117.0" prefHeight="26.0" prefWidth="199.0" />
+                                <TextField fx:id="tPrioritiesTxt" layoutX="228.0" layoutY="71.0" prefHeight="26.0" prefWidth="199.0" />
+                                <TextField fx:id="tTaskTxt" layoutX="228.0" layoutY="30.0" prefHeight="26.0" prefWidth="199.0" />
+                        <TextField fx:id="tSubmissionDateTxt" layoutX="228.0" layoutY="163.0" prefHeight="26.0" prefWidth="199.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="View All Tasks">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="tasksTable" layoutX="13.0" layoutY="14.0" prefHeight="376.0" prefWidth="710.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
