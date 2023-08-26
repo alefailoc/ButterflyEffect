@@ -61,7 +61,7 @@
                                 <TextField fx:id="tPriorityTxt" layoutX="228.0" layoutY="71.0" prefHeight="26.0" prefWidth="203.0" />
                                 <TextField fx:id="tTimeTakenTxt" layoutX="228.0" layoutY="117.0" prefHeight="26.0" prefWidth="203.0" />
                                 <TextField fx:id="tDetailsTxt" layoutX="228.0" layoutY="217.0" prefHeight="59.0" prefWidth="206.0" />
-                        <TextField fx:id="tDueDateTxt" layoutX="228.0" layoutY="164.0" prefHeight="26.0" prefWidth="203.0" />
+                        <TextField fx:id="tDueDate" layoutX="230.0" layoutY="164.0" prefHeight="26.0" prefWidth="203.0" />
                             </children>
                         </AnchorPane>
                     </content>
@@ -110,11 +110,11 @@
                                 <RadioButton layoutX="527.0" layoutY="154.0" mnemonicParsing="false" onAction="#completedBtn" text="Completed!!" />
                                 <Button layoutX="434.0" layoutY="30.0" mnemonicParsing="false" onAction="#searchBtn" text="search" />
                                 <Button layoutX="561.0" layoutY="307.0" mnemonicParsing="false" onAction="#editTaskBtn" text="save changes" />
-                                <TextField fx:id="tDetailTxt" layoutX="228.0" layoutY="217.0" prefHeight="59.0" prefWidth="206.0" />
-                                <TextField fx:id="tTimeTxt" layoutX="228.0" layoutY="117.0" prefHeight="26.0" prefWidth="199.0" />
-                                <TextField fx:id="tPrioritiesTxt" layoutX="228.0" layoutY="71.0" prefHeight="26.0" prefWidth="199.0" />
-                                <TextField fx:id="tTaskTxt" layoutX="228.0" layoutY="30.0" prefHeight="26.0" prefWidth="199.0" />
-                        <TextField fx:id="tSubmissionDateTxt" layoutX="228.0" layoutY="163.0" prefHeight="26.0" prefWidth="199.0" />
+                                <TextField layoutX="228.0" layoutY="217.0" prefHeight="59.0" prefWidth="206.0" />
+                                <TextField layoutX="228.0" layoutY="117.0" prefHeight="26.0" prefWidth="199.0" />
+                                <TextField layoutX="228.0" layoutY="71.0" prefHeight="26.0" prefWidth="199.0" />
+                                <TextField layoutX="228.0" layoutY="30.0" prefHeight="26.0" prefWidth="199.0" />
+                        <TextField layoutX="228.0" layoutY="163.0" prefHeight="26.0" prefWidth="199.0" />
                             </children>
                         </AnchorPane>
                     </content>
