@@ -7,13 +7,13 @@ public class Task {
     String task;
     int priority;
     double timeTaken;
-    double dueDate;
+    String dueDate;
     String details;
     boolean isItDifficult;
 
     boolean isItEasy;
 
-    public Task(String task, int priority, double timeTaken, double dueDate, String details, boolean isItDifficult, boolean isItEasy) {
+    public Task(String task, int priority, double timeTaken, String dueDate, String details, boolean isItDifficult, boolean isItEasy) {
         this.task = task;
         this.priority = priority;
         this.timeTaken = timeTaken;
@@ -47,11 +47,11 @@ public class Task {
         this.timeTaken = timeTaken;
     }
 
-    public double getDueDate() {
+    public String getDueDate() {
         return dueDate;
     }
 
-    public void setDueDate(double dueDate) {
+    public void setDueDate(String dueDate) {
         this.dueDate = dueDate;
     }
 

@@ -5,13 +5,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 
-<AnchorPane prefHeight="474.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.butterflyeffect.PlannerController">
+<AnchorPane prefHeight="474.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.butterflyeffect.PlannerController">
     <children>
-        <Button layoutX="237.0" layoutY="421.0" onAction="#onHelloButtonClick" text="Edit &amp; add Tasks" />
-        <ImageView fx:id="photoOne" fitHeight="150.0" fitWidth="200.0" layoutX="582.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" />
-        <ImageView fx:id="photoTwo" fitHeight="150.0" fitWidth="200.0" layoutX="582.0" layoutY="256.0" pickOnBounds="true" preserveRatio="true" />
-        <Button layoutX="631.0" layoutY="197.0" onAction="#change1ImageBtn" text="change image " />
-        <Button layoutX="631.0" layoutY="408.0" onAction="#change2ImageBtn" text="change image " />
-        <HBox layoutX="14.0" layoutY="27.0" prefHeight="392.0" prefWidth="555.0" />
+        <Button layoutX="282.0" layoutY="428.0" onAction="#configurationTaskBtn" text="Edit &amp; add Tasks" />
+        <ImageView fx:id="photoOne" fitHeight="150.0" fitWidth="200.0" layoutX="684.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+        <ImageView fx:id="photoTwo" fitHeight="150.0" fitWidth="200.0" layoutX="684.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true" />
+        <Button layoutX="737.0" layoutY="196.0" onAction="#change1ImageBtn" text="change image " />
+        <Button layoutX="737.0" layoutY="407.0" onAction="#change2ImageBtn" text="change image " />
+        <HBox fx:id="weekHbox" layoutX="14.0" layoutY="27.0" prefHeight="392.0" prefWidth="644.0" />
     </children>
 </AnchorPane>

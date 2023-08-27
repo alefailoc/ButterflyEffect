@@ -1,15 +1,2 @@
 [
-  {
-    "task": "shouse",
-    "priority": 3,
-    "timeTaken": 0.5,
-    "dueDate": {
-      "year": 2023,
-      "month": 8,
-      "day": 26
-    },
-    "details": "2o3h32uo",
-    "isItDifficult": false,
-    "isItEasy": false
-  }
 ]
