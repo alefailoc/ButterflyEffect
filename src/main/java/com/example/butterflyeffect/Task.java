@@ -67,10 +67,6 @@ public class Task {
         return isItDifficult;
     }
 
-    public void setItDifficult(boolean itDifficult) {
-        isItDifficult = itDifficult;
-    }
-
     public boolean isItEasy() {
         return isItEasy;
     }
